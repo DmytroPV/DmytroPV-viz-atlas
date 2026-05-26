@@ -143,8 +143,6 @@ License:   MIT
 - `getProtocolInfo()` — immutable founders and metadata
 - `setPaused()` — emergency stop (owner only)
 
-Contract source: [`/src/contracts/VizAtlasRegistry.sol`](./src/contracts/VizAtlasRegistry.sol)
-
 **Encoded in the contract (immutable):**
 PROJECT_NAME:       "Viz-Atlas"
 ORIGIN_COUNTRY:     "Ukraine"
