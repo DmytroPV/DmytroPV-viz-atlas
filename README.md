@@ -195,7 +195,7 @@ guide AI tools as expert coding assistants.
 - Scientific accuracy validation
 - All product decisions and vision
 
-**AI assistance (Google Gemini AI Studio):**
+**AI assistance:**
 - UI component implementation and Three.js optimizations
 - Multi-language localization (UA/EN)
 - Boilerplate code generation and refactoring
