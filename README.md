@@ -232,6 +232,6 @@ rights over the Protocol or its code.
 
 **Built for the stars — for all of humanity** 🌌
 
-*© 2026 Viz-Atlas · Created in Ukraine 🇺🇦 · MIT License*
+*© 2026 Viz-Atlas ·  Created in Ukraine UA · MIT License*
 
 </div>
