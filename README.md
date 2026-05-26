@@ -39,3 +39,32 @@
   │                           │      │ Polygon (контракт ERC-721)│
   └───────────────────────────┘      │ Address: 0x013164EA...    │
                                      └───────────────────────────┘
+
+====================================================
+flowchart TD
+    subgraph Data [ОТРИМАННЯ АСТРОНОМІЧНИХ ДАНИХ]
+        NASA[Екзопланети NASA API/TAP]
+        SIMBAD[Астрономічна база SIMBAD]
+    end
+
+    subgraph Backend [СЕРВЕРНА ЧАСТИНА]
+        Express[Експрес JS Сервер]
+    end
+
+    subgraph Engine [ДВИГУН VIZ-ATLAS FRONTPAGE]
+        Three[Сфера 3D-рендерингу <br>Three.js / React Three Fiber]
+        GLSL[Користувацькі GLSL-шейдери <br>Карти сонячної атмосфери]
+    end
+
+    subgraph Ledger [БЕЗПЕКА ТА РЕЄСТР]
+        Firebase[Firestore Стан & Кешування]
+        Polygon[Реєстр у мережі Polygon <br>Smart Contract ERC-721]
+    end
+
+    NASA -->|API реального часу| Express
+    SIMBAD -->|API реального часу| Express
+    Express -->|Потік JSON-даних| Three
+    Express -->|Потік JSON-даних| GLSL
+    Three -->|Безпечні підписи| Firebase
+    GLSL -->|Безпечні підписи| Firebase
+    Three -->|Реєстр у Web3| Polygon
